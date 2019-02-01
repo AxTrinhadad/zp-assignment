@@ -42,4 +42,13 @@ describe('<Dishes />', () => {
         });
         expect(mountWrap.find(Select)).toHaveLength(2);
     });
+
+    it('should find two selects ', () => {
+        mountWrap = mount(<Dishes />);
+        mountWrap.setProps({
+            restaurant: 'Mc Donalds',
+            meal: 'lunch'
+        });
+        expect(mountWrap.find(Select)).toHaveLength(2);
+    });
 })

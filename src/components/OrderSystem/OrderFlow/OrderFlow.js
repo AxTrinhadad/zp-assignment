@@ -6,11 +6,12 @@ const OrderFlow = (props) => {
     return (
         <div className="buttonContainer">
             {props.activeStep !== 0 && (
-            <Button onClick={props.prevStep}>
+            <Button className="previousBtn" onClick={props.prevStep}>
                 Previous
             </Button>
             )}
             <Button
+            className="nextBtn"
             variant="contained"
             color="primary"
             onClick={props.continue}
