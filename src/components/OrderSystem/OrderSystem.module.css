@@ -7,14 +7,3 @@ main.content {
     padding: 25px;
 }
 
-.buttonContainer {
-    display: 'flex';
-    justify-content: 'flex-end';
-    padding-top: 40px;
-}
-
-
-.buttonContainer button {
-    margin: 10px;
-    margin-left: 20px;
-}

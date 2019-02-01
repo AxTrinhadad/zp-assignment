@@ -112,7 +112,7 @@ class Dishes extends Component {
             } else {
                 return null;
             }    
-        }).flat();
+        }).reduce((acc, val) => acc.concat(val), []);
 
         const updatedDishes = [...new Set(dishes.filter(Boolean))]
 

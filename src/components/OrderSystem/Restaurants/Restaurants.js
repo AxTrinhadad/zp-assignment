@@ -56,7 +56,7 @@ class Restaurants extends Component {
                     return item.restaurant;
                 });
 
-        }).flat();
+        }).reduce((acc, val) => acc.concat(val), []);
 
         this.setState({
             restaurantOptions: [...new Set(restaurants)]

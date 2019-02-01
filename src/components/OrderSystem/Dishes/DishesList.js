@@ -18,9 +18,9 @@ const DishesList = (props) => {
                 const dishQuantity = orderedDishes[key];
                 orderedDishesList.push(
                     <TableRow key={dishCount}>
-                    <TableCell align="left">{dishCount}</TableCell>
-                    <TableCell component="th" scope="row">{key}</TableCell>
-                    <TableCell align="right">{dishQuantity}</TableCell>
+                        <TableCell align="left">{dishCount}</TableCell>
+                        <TableCell component="th" scope="row">{key}</TableCell>
+                        <TableCell align="right">{dishQuantity}</TableCell>
                     </TableRow>);
             }
         }
